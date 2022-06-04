@@ -3,7 +3,6 @@
     /* Basic Options */
     "target": "es2019",
     "module": "es6",
-    "jsx": "react-jsx",
     "declaration": true,
     "outDir": "./lib",
 

@@ -10,10 +10,6 @@
       "excludePackageNames": ["typescript"],
       "groupName": "all minor and patch dependencies",
       "automerge": true
-    },
-    {
-      "matchPackageNames": ["react", "@types/react", "react-dom", "@types/react-dom"],
-      "groupName": "react"
     }
   ],
   "enabledManagers": ["github-actions", "npm"]

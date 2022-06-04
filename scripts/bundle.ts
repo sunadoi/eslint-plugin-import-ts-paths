@@ -23,7 +23,6 @@ build({
   bundle: true,
   sourcemap: true,
   minify: process.env.NODE_ENV === "production",
-  external: ["react", "react-dom"],
   splitting: true,
   format: "esm",
   target: "es2019",
