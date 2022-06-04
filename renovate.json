@@ -1,0 +1,20 @@
+{
+  "extends": ["config:base"],
+  "schedule": "before 9am on the first day of the month",
+  "timezone": "Asia/Tokyo",
+  "prHourlyLimit": 0,
+  "rangeStrategy": "bump",
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["patch", "minor"],
+      "excludePackageNames": ["typescript"],
+      "groupName": "all minor and patch dependencies",
+      "automerge": true
+    },
+    {
+      "matchPackageNames": ["react", "@types/react", "react-dom", "@types/react-dom"],
+      "groupName": "react"
+    }
+  ],
+  "enabledManagers": ["github-actions", "npm"]
+}
